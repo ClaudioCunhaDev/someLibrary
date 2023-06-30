@@ -1,6 +1,7 @@
 body {
   place-items: start;
   padding: 0 4rem;
+  background-color: #888;
 }
 
 form {
