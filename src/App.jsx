@@ -4,7 +4,6 @@ import { Game } from "./Components/Game";
 import TextInput from "./Components/TextInput";
 
 function App() {
-  
   const [title, setTitle] = useState("");
   const [cover, setCover] = useState("");
   const [games, SetGames] = useState(() => {
@@ -62,6 +61,7 @@ function App() {
         {games.map((ele, index) => (
           <Game
             key={ele.id}
+            title={ele.title}
             cover={ele.cover}
             handleRemove={() => handleRemove(ele.id)}
           />
